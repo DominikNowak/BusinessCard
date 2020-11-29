@@ -16,6 +16,37 @@ body {
   z-index: 2;
 }
 
+.navbar__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.navbar__logo-image {
+  width: 35px;
+  margin-right: 10px;
+}
+
+.navbar__logo-link {
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 26px;
+}
+
 .navbar__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,10 +55,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 30px;
 }
 
 .navbar__menu-item {
@@ -35,7 +62,7 @@ body {
 }
 
 .navbar__menu-link {
-  color: #fff;
+  color: white;
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;

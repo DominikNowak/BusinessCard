@@ -3,23 +3,39 @@
     position: fixed;
     width: 100vw;
     z-index: 2;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    &__logo-image {
+        width: 35px;
+        margin-right: 10px;
+    }
+    &__logo-link {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        font-size: 26px;
+    }
     &__menu {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
-        margin-right: 30px;
     }
     &__menu-item {
         display: inline-block;
     }
     &__menu-link {
-        color: #fff;
+        color: white;
         font-size: 16px;
         font-weight: bold;
         text-decoration: none;
         padding: 5px 10px;
         transition: 100ms;
-        
+
         &:hover {
             border-bottom: 2px solid white;
         }
