@@ -3,17 +3,19 @@
     position: fixed;
     width: 100vw;
     z-index: 2;
+    padding: 5px 0;
     &__inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-right: 30px;
-        margin-left: 30px;
+        margin: 0 20px;
     }
+
     &__logo-image {
-        width: 35px;
+        width: 30px;
         margin-right: 10px;
     }
+
     &__logo-link {
         text-decoration: none;
         color: white;
@@ -21,23 +23,99 @@
         align-items: center;
         font-size: 26px;
     }
+
     &__menu {
         display: flex;
-        flex-direction: row;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        transition: 0.5s;
+        transition-property: opacity;
+
+        @media screen and (max-width: 1199px) {
+            position: fixed;
+            top: 0;
+            left: 65vw;
+            bottom: 0;
+            right: 0;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.9);
+            opacity: 0;
+            pointer-events: none;
+            backdrop-filter: blur(3px);
+            z-index: -1;
+        }
+
+        @media screen and (max-width: 767px) {
+            left: 0;
+        }
+
+        &--open {
+            @media screen and (max-width: 1199px) {
+                opacity: 1;
+                pointer-events: unset;
+            }
+        }
     }
+
     &__menu-item {
-        display: inline-block;
+        margin-left: 20px;
+        padding: 5px;
+        transition: 100ms;
+        border-bottom: 2px solid transparent;
+        border-top: 2px solid transparent;
+
+        @media screen and (max-width: 1199px) {
+            margin-left: 0;
+            padding: 10px;
+        }
+
+        &:hover {
+            border-color: white;
+
+            @media screen and (max-width: 1199px) {
+                border-color: transparent;
+            }
+        }
     }
+
     &__menu-link {
         color: white;
         font-size: 16px;
         font-weight: bold;
         text-decoration: none;
-        padding: 5px 10px;
-        transition: 100ms;
 
-        &:hover {
-            border-bottom: 2px solid white;
+        @media screen and (max-width: 1199px) {
+            font-size: 28px;
         }
+    }
+
+    &__mbutton {
+        display: none;
+        @media screen and (max-width: 1199px) {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50px;
+            height: 45px;
+            padding: 10px 8px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.5s ease-in-out 0s;
+        }
+    }
+
+    &__mbutton-span {
+        width: 30px;
+        margin: 0px auto;
+        height: 5px;
+        border-radius: 1px;
+        background: rgb(245, 245, 245);
+        display: block;
     }
 }
