@@ -1,0 +1,27 @@
+.about-me {
+    display: flex;
+    align-items: center;
+
+    &__header {
+        font-size: 30px;
+    }
+
+    &__paragraph {
+        line-height: 1.9;
+        color: #777;
+        font-size: 18px;
+
+        @include rwd(mobile) {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    }
+
+    &__image {
+        margin-left: 30px;
+
+        @include rwd(tablet) {
+            display: none;
+        }
+    }
+}
