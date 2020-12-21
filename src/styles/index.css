@@ -236,7 +236,12 @@ body {
   width: 1180px;
   margin: auto;
   max-width: 100%;
-  padding: 60px 30px;
+  padding: 30px;
+}
+
+.container--smaller {
+  width: 960px;
+  padding: 0;
 }
 
 .about-me {
@@ -246,6 +251,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #333131;
 }
 
 .about-me__header {
@@ -254,7 +260,6 @@ body {
 
 .about-me__paragraph {
   line-height: 1.9;
-  color: #777;
   font-size: 18px;
 }
 
@@ -273,5 +278,139 @@ body {
   .about-me__image {
     display: none;
   }
+}
+
+.contact {
+  background: #333131;
+  color: #eee;
+}
+
+.contact__header {
+  font-size: 30px;
+}
+
+.contact__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .contact__info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+}
+
+.contact__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 30px;
+}
+
+.contact__info-icon {
+  margin-right: 10px;
+  height: 25px;
+}
+
+.contact__info-link {
+  text-decoration: none;
+  color: #eee;
+  font-size: 22px;
+}
+
+@media (max-width: 767px) {
+  .contact__info-link {
+    font-size: 16px;
+  }
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__form-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -8px;
+}
+
+.contact__form-field {
+  width: calc(50% - 16px);
+  margin: 8px;
+  background: transparent;
+  border: 2px solid;
+  color: #eee;
+  padding: 12px;
+}
+
+.contact__form-field::-webkit-input-placeholder {
+  color: #eee;
+  text-transform: uppercase;
+}
+
+.contact__form-field:-ms-input-placeholder {
+  color: #eee;
+  text-transform: uppercase;
+}
+
+.contact__form-field::-ms-input-placeholder {
+  color: #eee;
+  text-transform: uppercase;
+}
+
+.contact__form-field::placeholder {
+  color: #eee;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .contact__form-field {
+    width: calc(100% - 16px);
+  }
+}
+
+.contact__form-field--full-row {
+  width: calc(100% - 16px);
+}
+
+.contact__form-submit-button {
+  display: block;
+  margin: 30px auto 0 auto;
+  border: none;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact__form-submit-button:hover {
+  background: white;
 }
 /*# sourceMappingURL=index.css.map */
