@@ -1,6 +1,7 @@
 .about-me {
     display: flex;
     align-items: center;
+    color:rgb(51, 49, 49);
 
     &__header {
         font-size: 30px;
@@ -8,7 +9,6 @@
 
     &__paragraph {
         line-height: 1.9;
-        color: #777;
         font-size: 18px;
 
         @include rwd(mobile) {

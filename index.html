@@ -43,7 +43,7 @@
     </header>
 
     <div class="container" id="about-me">
-        <section class="about-me" >
+        <section class="about-me">
             <div class="about-me__text">
                 <h3 class="about-me__header">About me</h3>
                 <p class="about-me__paragraph">Lorem ipsum, dolor sit amet consectetur
@@ -62,15 +62,36 @@
                     harum at iste atque ratione fugit quaerat reprehenderit. Quam consequuntur explicabo pariatur, illo
                     deserunt non eum.</p>
             </div>
-            <img src="src/images/about-me.jpg" alt="" class="about-me__image">
+            <img src="src/images/about_me.jpg" alt="" class="about-me__image">
         </section>
     </div>
 
-    <div class="container">
-        <form class="contact-form">
-
-        </form>
-    </div>
+    <section class="contact">
+        <div class="container" id="contact">
+            <h3 class="contact__header">Contact me</h3>
+            <div class="container container--smaller">
+                <div class="contact__info">
+                    <div class="contact__info-item">
+                        <img src="src/images/mail_icon.svg" alt="e-mail" class="contact__info-icon">
+                        <a href="mailto:dominik@hotmail.com" class="contact__info-link">dominik@hotmail.com</a>
+                    </div>
+                    <div class="contact__info-item">
+                        <img src="src/images/phone_icon.svg" alt="Phone" class="contact__info-icon">
+                        <a href="tel:789789789" class="contact__info-link">789789789</a>
+                    </div>
+                </div>
+                <form class="contact__form">
+                    <div class="contact__form-fields">
+                        <input name="name" class="contact__form-field" required placeholder="Name">
+                        <input name="email" type="email" class="contact__form-field" required placeholder="Email">
+                        <textarea name="content" class="contact__form-field contact__form-field--full-row" required
+                            placeholder="Message" rows="10"></textarea>
+                    </div>
+                    <button class="contact__form-submit-button">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
