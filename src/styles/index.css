@@ -348,6 +348,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 20px;
 }
 
 .contact__form-fields {
@@ -412,5 +413,24 @@ body {
 
 .contact__form-submit-button:hover {
   background: white;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #333131;
+  border-top: 1px solid #eee;
+  padding: 5px;
+}
+
+.footer_text {
+  color: #eee;
 }
 /*# sourceMappingURL=index.css.map */
