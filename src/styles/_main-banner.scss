@@ -32,11 +32,15 @@
         color: rgb(255, 255, 150);
         font-size: 92px;
         letter-spacing: 3px;
+
+        @include rwd(mobile){
+            font-size: 72px;
+        }
     }
 
     &__introduce {
         color: rgb(255, 255, 255);
-        font-size: 54px;
+        font-size: 42px;
         letter-spacing: 2px;
     }
 }
