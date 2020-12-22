@@ -41,6 +41,7 @@
 
         &:hover {
             filter: none;
+            animation: grayer 2s ease-in-out infinite;
         }
 
         @include rwd(tablet) {
@@ -56,5 +57,19 @@
 
     &__grid-icon {
         width: 100%;
-        }
+    }
+}
+
+@keyframes grayer {
+    0% {
+        background: $color-primary;
+    }
+
+    50% {
+        background: #d4d4d4;
+    }
+
+    100% {
+        background: $color-primary;
+    }
 }

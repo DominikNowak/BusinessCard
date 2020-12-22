@@ -380,6 +380,8 @@ body {
 .skills__grid-item:hover {
   -webkit-filter: none;
           filter: none;
+  -webkit-animation: grayer 2s ease-in-out infinite;
+          animation: grayer 2s ease-in-out infinite;
 }
 
 @media (max-width: 1199px) {
@@ -400,6 +402,30 @@ body {
 
 .skills__grid-icon {
   width: 100%;
+}
+
+@-webkit-keyframes grayer {
+  0% {
+    background: #eee;
+  }
+  50% {
+    background: #d4d4d4;
+  }
+  100% {
+    background: #eee;
+  }
+}
+
+@keyframes grayer {
+  0% {
+    background: #eee;
+  }
+  50% {
+    background: #d4d4d4;
+  }
+  100% {
+    background: #eee;
+  }
 }
 
 .contact {
