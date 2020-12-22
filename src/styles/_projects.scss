@@ -1,7 +1,8 @@
-.about-me {
+.projects {
+    background: $color-secondary;
     display: flex;
     align-items: center;
-    color:rgb(51, 49, 49);
+    color: $color-primary;
 
     &__header {
         font-size: $font-size-heading-primary-desktop;
@@ -14,14 +15,6 @@
         @include rwd(mobile) {
             font-size: 16px;
             line-height: 1.5;
-        }
-    }
-
-    &__image {
-        margin-left: 30px;
-
-        @include rwd(tablet) {
-            display: none;
         }
     }
 }

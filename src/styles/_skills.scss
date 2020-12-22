@@ -1,0 +1,60 @@
+.skills {
+    color: $color-secondary;
+
+    &__header {
+        font-size: $font-size-heading-primary-desktop;
+    }
+
+    &__grid {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 30px;
+
+        @include rwd(tablet) {
+            padding: 10px;
+        }
+
+        @include rwd(mobile) {
+            padding: 0px;
+        }
+    }
+
+    &__grid-items {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+
+        @include rwd(tablet) {
+            grid-template-columns: repeat(4, 25%);
+        }
+
+        @include rwd(mobile) {
+            grid-template-columns: repeat(3, 33%);
+        }
+    }
+
+    &__grid-item {
+        width: 100%;
+        padding: 20px;
+        filter: grayscale(100%);
+        transition: filter 0.25s ease-out;
+
+        &:hover {
+            filter: none;
+        }
+
+        @include rwd(tablet) {
+            padding: 15px;
+            filter: none;
+            transition: none;
+        }
+
+        @include rwd(mobile) {
+            padding: 10px;
+        }
+    }
+
+    &__grid-icon {
+        width: 100%;
+        }
+}
