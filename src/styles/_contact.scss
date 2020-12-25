@@ -69,8 +69,15 @@
             }
         }
 
-        &-field--full-row {
+        &-field--textarea {
             width: calc(100% - 16px);
+            resize: vertical;
+            max-height: 400px;
+            min-height: 100px;
+
+            @include rwd(mobile) {
+                resize: none;
+            }
         }
 
         &-submit-button {

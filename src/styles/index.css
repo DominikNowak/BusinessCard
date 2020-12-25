@@ -543,8 +543,17 @@ body {
   }
 }
 
-.contact__form-field--full-row {
+.contact__form-field--textarea {
   width: calc(100% - 16px);
+  resize: vertical;
+  max-height: 400px;
+  min-height: 100px;
+}
+
+@media (max-width: 767px) {
+  .contact__form-field--textarea {
+    resize: none;
+  }
 }
 
 .contact__form-submit-button {
